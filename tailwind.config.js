@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+  
     padding:{
       '1px': '1px',
         '2px': '2px',
@@ -46,6 +47,17 @@ export default {
         '38px': '38px',
         '39px': '39px',
         '40px': '40px',
+        '114px': '114px',
+        '122px': '122px',
+    },
+    
+    height:{
+      'cta height': '477px',
+      'heroimage': '596px'
+    },
+    width:{
+      'cta width': '620px',
+      'hero width': "540px",
     },
     fontFamily:{
       poppins: ["Poppins", "sans-serif"],
@@ -54,6 +66,7 @@ export default {
       'primary' :'rgba(11, 90, 60, 1)',
       'primaryLight' : "rgba(25, 176, 111, 1)",
       'White': 'rgba(255, 255, 255, 1)',
+      'mountain': 'rgba(211, 248, 225, 1)',
     },
     extend: {},
   },

@@ -1,26 +1,28 @@
-import React from 'react'
-import hamburger from '../assets/Vector.png'
+import React from "react";
+import hamburgerIcon from "../assets/Vector.png";
 
 const Navbar = () => {
   return (
-    <div className=' flex justify-between px-10 items-center shadow-lg lg:px-20 '>
-        {/* logo text */}
-        <h2 className='text-[20px] text-primary  lg:text-[36px] font-poppins logopadding'>Eventtrakka</h2>
-        {/* hamburger imgae that hides on large screens  */}
-        <div className='pt-5 pb-5'> <img src={hamburger} alt=""  className="h-5 w-6  lg:hidden "/></div>
-       
+    <div className="flex justify-between px-[23px] pb-[10px] pt-[10px] lg:pl-[90px] lg:pr-[50px] shadow-lg">
+      {/* text logo */}
+      <h2 className="text-primary text-[20px] lg:text-[36px] ">Eventtrakka</h2>
+      {/* hamburger menu */}
+      <div className="lg:hidden">
+        <img src={hamburgerIcon} />
+      </div>
 
-        {/* nav items that show up on large screens  */}
-        <div className='hidden lg:flex lg:gap-10 xl:gap-20 font-poppins navPadding'>
-            <a href="">Home</a>
-            <a href="">events</a>
-            <a href="">community</a>
-            <a href="">about</a>
-            <a href="">login</a>
-
-        </div>
+      {/* nav items that show up on large screens */}
+      <div className="hidden lg:flex gap-[80px] pb-[31px] pt-[20px] ">
+        <a href="">Home</a>
+        <a href="">events</a>
+        <a href="">community</a>
+        <a href="">about</a>
+        <a href="">login</a>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
+
+const navstyling = "hidden lg:flex lg:gap-10 xl:gap-20 font-poppins navPadding";
